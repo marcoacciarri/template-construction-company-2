@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     './pages/**/*.tsx',
@@ -18,6 +20,9 @@ module.exports = {
       boxShadow: {
         newsLetter:
           '0 1px 3px 0 rgba(0, 0, 0, 0.1) , 0 5px 15px 0 rgba(0, 0, 0, 0.05)',
+      },
+      colors: {
+        sky: colors.zinc,
       },
     },
   },
