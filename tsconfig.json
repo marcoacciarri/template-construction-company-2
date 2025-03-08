@@ -2,7 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@reactbricksui/*": ["react-bricks/bricks/react-bricks-ui/*"]
+      "@reactbricksui/*": ["react-bricks/bricks/react-bricks-ui/*"],
+      "@customui/*": ["react-bricks/bricks/custom/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

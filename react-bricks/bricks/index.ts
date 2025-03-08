@@ -1,9 +1,10 @@
 import { types } from 'react-bricks/frontend'
 
 import HeroUnit from './custom/MyHeroUnit'
+import SocialHeader from './custom/layout/SocialHeader'
+import SocialLink from './custom/shared/SocialLink'
 import Pokemon from './custom/Pokemon'
-import Button from './custom/Button'
-import Button2 from './custom/Button2'
+import Button from './custom/shared/Button'
 import reactBricksUITheme from './react-bricks-ui'
 import Thumbnail from './custom/Thumbnail'
 
@@ -13,12 +14,16 @@ const bricks: types.Theme[] = [
     themeName: 'Default',
     categories: [
       {
+        categoryName: 'Custom',
+        bricks: [SocialHeader], // Custom Bricks
+      },
+      {
         categoryName: 'Hero sections',
         bricks: [HeroUnit], // Custom Bricks
       },
       {
         categoryName: 'Shared',
-        bricks: [Button, Button2], // Custom Bricks
+        bricks: [Button, SocialLink ], // Custom Bricks
       },
       {
         categoryName: 'Pokemon',

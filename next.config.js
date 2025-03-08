@@ -11,6 +11,10 @@ module.exports = {
       __dirname,
       'react-bricks/bricks/react-bricks-ui/'
     )
+    config.resolve.alias['@customui'] = path.resolve(
+      __dirname,
+      'react-bricks/bricks/custom/'
+    )
     return config
   },
 }
